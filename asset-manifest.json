@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Pink-Peacock/static/css/main.4a8f01a1.css",
+    "main.js": "/Pink-Peacock/static/js/main.65d2d2da.js",
+    "static/media/logo.png": "/Pink-Peacock/static/media/logo.6d62ba4080c8d32ad94a.png",
+    "index.html": "/Pink-Peacock/index.html",
+    "main.4a8f01a1.css.map": "/Pink-Peacock/static/css/main.4a8f01a1.css.map",
+    "main.65d2d2da.js.map": "/Pink-Peacock/static/js/main.65d2d2da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a8f01a1.css",
+    "static/js/main.65d2d2da.js"
+  ]
+}
