@@ -24,7 +24,7 @@ const Categories = () => (
     <Row
       justify="center"
       gutter={[16, 24]}
-      style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}
+      style={{ maxWidth: 1600, margin: '0 auto', padding: '0 24px' }}
     >
       {CATEGORIES.map(({ key, icon, label }) => (
         <Col xs={12} sm={8} md={4} lg={4} key={key}>

@@ -6,7 +6,7 @@ const { Title, Text } = Typography;
 
 const NewArrivals = () => (
   <section id="new-arrivals" className="new-arrivals">
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
+    <div style={{ maxWidth: 1600, margin: '0 auto', padding: '0 24px' }}>
       <div className="new-arrivals__header">
         <Text className="new-arrivals__tag">✦ Just Dropped ✦</Text>
         <Title level={2} className="new-arrivals__title">New Arrivals</Title>

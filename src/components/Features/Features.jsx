@@ -22,7 +22,7 @@ const Features = () => (
     <Row
       gutter={[24, 24]}
       justify="center"
-      style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}
+      style={{ maxWidth: 1600, margin: '0 auto', padding: '0 24px' }}
     >
       {FEATURES.map(({ icon, title, desc }) => (
         <Col xs={12} sm={12} md={6} lg={6} key={title}>

@@ -7,7 +7,7 @@
     color: $color-white;
     text-align: center;
     padding: $spacing-sm $spacing-md;
-    font-size: $font-size-xs;
+    font-size: $font-size-sm;
     letter-spacing: 1px;
   }
 
@@ -24,18 +24,19 @@
     align-items: baseline;
     gap: 2px;
     white-space: nowrap;
+    overflow: visible;
   }
 
   &__brand-pink {
     font-family: $font-heading;
-    font-size: 1.6rem;
+    font-size: clamp(1.2rem, 1.8vw, 2.4rem);
     font-weight: 700;
     color: $color-primary;
   }
 
   &__brand-peacock {
     font-family: $font-heading;
-    font-size: 1.6rem;
+    font-size: clamp(1.2rem, 1.8vw, 2.4rem);
     font-weight: 700;
     color: $color-secondary;
   }
@@ -47,7 +48,7 @@
 
     .ant-menu-item {
       font-weight: 500;
-      font-size: $font-size-sm;
+      font-size: $font-size-base;
 
       &:hover,
       &-selected {
@@ -61,7 +62,7 @@
   }
 
   &__icon-btn {
-    font-size: 18px;
+    font-size: clamp(18px, 1.5vw, 22px);
     color: $color-dark;
     transition: color $transition-base;
 
@@ -73,13 +74,13 @@
   &__mobile-menu {
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       display: block;
     }
   }
 
   &__desktop-menu {
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       display: none !important;
     }
   }

@@ -58,8 +58,9 @@
     color: #aaa;
     margin-bottom: $spacing-sm;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: $spacing-sm;
+    word-break: break-word;
   }
 
   &__contact-icon {

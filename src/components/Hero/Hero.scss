@@ -3,7 +3,7 @@
 
 .hero {
   padding: $spacing-section 0;
-  min-height: 85vh;
+  min-height: clamp(60vh, 80vh, 90vh);
   @include flex-center;
 
   @media (max-width: 768px) {
@@ -14,7 +14,7 @@
   &__tag {
     display: inline-block;
     color: $color-primary;
-    font-size: $font-size-sm;
+    font-size: clamp(0.75rem, 1vw, 1rem);
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -22,13 +22,13 @@
   }
 
   &__title {
-    font-size: $font-size-xxl;
+    font-size: clamp(2.2rem, 4vw, 4.5rem);
     color: $color-dark;
     line-height: 1.2;
     margin-bottom: $spacing-md;
 
     @media (max-width: 768px) {
-      font-size: $font-size-xl;
+      font-size: 2rem;
     }
   }
 
@@ -38,16 +38,16 @@
 
   &__subtitle {
     color: $color-gray;
-    font-size: $font-size-md;
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
     margin-bottom: $spacing-lg;
-    max-width: 450px;
+    max-width: 550px;
   }
 
   &__visual {
     @include flex-center;
     position: relative;
     height: 100%;
-    min-height: 400px;
+    min-height: 300px;
 
     @media (max-width: 768px) {
       min-height: 280px;
@@ -61,13 +61,13 @@
   &__logo-img {
     position: relative;
     z-index: 1;
-    width: 450px;
-    height: 450px;
+    width: clamp(280px, 35vw, 600px);
+    height: clamp(280px, 35vw, 600px);
     object-fit: contain;
 
     @media (max-width: 768px) {
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
     }
   }
 }

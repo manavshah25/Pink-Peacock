@@ -29,16 +29,16 @@ const Navbar = ({ wishlistCount, onWishlistClick }) => {
         <Row
           align="middle"
           justify="space-between"
-          style={{ maxWidth: 1200, margin: '0 auto', padding: '12px 24px' }}
+          style={{ maxWidth: 1600, margin: '0 auto', padding: '12px 24px' }}
         >
-          <Col xs={6} sm={6} md={4} lg={4}>
+          <Col xs={8} sm={8} md={5} lg={4}>
             <a href="#home" className="navbar__brand">
               <span className="navbar__brand-pink">Pink</span>
               <span className="navbar__brand-peacock">Peacock</span>
             </a>
           </Col>
 
-          <Col xs={0} sm={0} md={14} lg={14} className="navbar__desktop-menu">
+          <Col xs={0} sm={0} md={14} lg={16} className="navbar__desktop-menu">
             <Menu
               mode="horizontal"
               items={NAV_ITEMS}
@@ -47,7 +47,7 @@ const Navbar = ({ wishlistCount, onWishlistClick }) => {
             />
           </Col>
 
-          <Col xs={14} sm={14} md={6} lg={6}>
+          <Col xs={12} sm={12} md={5} lg={4}>
             <Row justify="end" align="middle">
               <Space size="middle">
                 <Button

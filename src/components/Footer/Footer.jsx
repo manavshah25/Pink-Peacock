@@ -18,9 +18,9 @@ const Footer = () => (
   <footer id="about" className="footer">
     <Row
       gutter={[32, 40]}
-      style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}
+      style={{ maxWidth: 1600, margin: '0 auto', padding: '0 24px' }}
     >
-      <Col xs={24} sm={24} md={8} lg={8}>
+      <Col xs={24} sm={24} md={7} lg={7}>
         <Title level={3} className="footer__brand-name">
           <span style={{ color: '#c2185b' }}>Pink</span>
           <span style={{ color: '#6b7f5e' }}>Peacock</span>
@@ -46,21 +46,21 @@ const Footer = () => (
         </Space>
       </Col>
 
-      <Col xs={12} sm={12} md={5} lg={5}>
+      <Col xs={12} sm={12} md={4} lg={4}>
         <Title level={5} className="footer__col-title">Quick Links</Title>
         {QUICK_LINKS.map((link) => (
           <a href="#jewellery" className="footer__link" key={link}>{link}</a>
         ))}
       </Col>
 
-      <Col xs={12} sm={12} md={5} lg={5}>
+      <Col xs={12} sm={12} md={4} lg={4}>
         <Title level={5} className="footer__col-title">Customer Care</Title>
         {SUPPORT_LINKS.map((link) => (
           <a href="#about" className="footer__link" key={link}>{link}</a>
         ))}
       </Col>
 
-      <Col xs={24} sm={24} md={6} lg={6}>
+      <Col xs={24} sm={24} md={9} lg={9}>
         <Title level={5} className="footer__col-title">Contact Us</Title>
         <div className="footer__contact-item">
           <InstagramOutlined className="footer__contact-icon" />

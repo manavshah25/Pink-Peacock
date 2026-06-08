@@ -127,7 +127,7 @@ const ProductCard = ({ product, onAddToCart, onToggleWishlist, isLiked }) => {
 
 const ProductSection = ({ id, tag, title, subtitle, products, onAddToCart, onToggleWishlist, wishlistItems }) => (
   <section id={id} className="product-section">
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
+    <div style={{ maxWidth: 1600, margin: '0 auto', padding: '0 24px' }}>
       <div className="product-section__header">
         <Text className="product-section__tag">✦ {tag} ✦</Text>
         <Title level={2} className="product-section__title">{title}</Title>

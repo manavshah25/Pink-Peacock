@@ -11,10 +11,10 @@ const Hero = () => (
       align="middle"
       justify="center"
       gutter={[48, 48]}
-      style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', width: '100%' }}
+      style={{ maxWidth: 1600, margin: '0 auto', padding: '0 24px', width: '100%' }}
     >
       <Col xs={24} sm={24} md={12} lg={12}>
-        <span className="hero__tag">New Collection 2025</span>
+        <span className="hero__tag">New Collection {new Date().getFullYear()}</span>
         <Title level={1} className="hero__title">
           Where Fashion<br />
           Meets <span className="hero__highlight">Shine</span>
