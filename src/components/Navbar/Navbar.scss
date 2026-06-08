@@ -1,0 +1,86 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.navbar {
+  &__top-bar {
+    background: $color-primary;
+    color: $color-white;
+    text-align: center;
+    padding: $spacing-sm $spacing-md;
+    font-size: $font-size-xs;
+    letter-spacing: 1px;
+  }
+
+  &__header {
+    box-shadow: $shadow-sm;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: $color-white;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+    white-space: nowrap;
+  }
+
+  &__brand-pink {
+    font-family: $font-heading;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color-primary;
+  }
+
+  &__brand-peacock {
+    font-family: $font-heading;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color-secondary;
+  }
+
+  &__menu {
+    border: none !important;
+    flex: 1;
+    justify-content: center;
+
+    .ant-menu-item {
+      font-weight: 500;
+      font-size: $font-size-sm;
+
+      &:hover,
+      &-selected {
+        color: $color-primary !important;
+
+        &::after {
+          border-color: $color-primary !important;
+        }
+      }
+    }
+  }
+
+  &__icon-btn {
+    font-size: 18px;
+    color: $color-dark;
+    transition: color $transition-base;
+
+    &:hover {
+      color: $color-primary !important;
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__desktop-menu {
+    @media (max-width: 768px) {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.newsletter {
+  padding: $spacing-section 0;
+  background: $color-primary-light;
+  text-align: center;
+
+  &__title {
+    margin-bottom: $spacing-sm !important;
+  }
+
+  &__subtitle {
+    color: $color-gray;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__success {
+    color: $color-primary;
+    font-weight: 500;
+    font-size: $font-size-md;
+  }
+}

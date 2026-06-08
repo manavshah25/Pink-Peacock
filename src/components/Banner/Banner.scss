@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.banner {
+  background: linear-gradient(135deg, $color-secondary, $color-secondary-dark);
+  padding: $spacing-xxl 0;
+  text-align: center;
+
+  &__tag {
+    font-size: $font-size-sm;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    color: $color-white;
+  }
+
+  &__title {
+    color: $color-white !important;
+    margin: $spacing-sm 0 !important;
+  }
+
+  &__code {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: $font-size-md;
+    margin-bottom: $spacing-lg;
+  }
+}

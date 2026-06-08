@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.categories {
+  padding: $spacing-xxl 0;
+  background: $color-gray-light;
+
+  &__item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform $transition-base;
+    padding: $spacing-md;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &:hover .categories__icon {
+      background: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: $border-radius-full;
+    background: $color-primary-light;
+    @include flex-center;
+    margin: 0 auto $spacing-sm;
+    font-size: 1.8rem;
+    color: $color-primary;
+    transition: all $transition-base;
+  }
+
+  &__label {
+    font-size: $font-size-sm;
+    font-weight: 500;
+    color: $color-dark;
+    margin: 0;
+  }
+}

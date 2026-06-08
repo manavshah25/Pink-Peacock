@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.new-arrivals {
+  padding: $spacing-section 0;
+  background: $color-gray-light;
+
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-xl;
+  }
+
+  &__tag {
+    color: $color-secondary;
+    font-size: $font-size-sm;
+    letter-spacing: 2px;
+  }
+
+  &__title {
+    margin-top: $spacing-sm !important;
+  }
+
+  &__card {
+    border-radius: $border-radius-md;
+    overflow: hidden;
+    @include flex-center;
+    min-height: 240px;
+    height: 100%;
+    transition: transform $transition-base;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &--pink {
+      background: linear-gradient(135deg, $color-primary-light, $color-primary-soft);
+      min-height: 504px;
+    }
+
+    &--green {
+      background: linear-gradient(135deg, $color-secondary-light, #c8e6c9);
+    }
+
+    &--warm {
+      background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    }
+  }
+
+  &__card-content {
+    text-align: center;
+    padding: $spacing-lg;
+  }
+
+  &__card-title {
+    margin-bottom: $spacing-md !important;
+  }
+}

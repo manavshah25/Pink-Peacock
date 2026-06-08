@@ -1,0 +1,90 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer {
+  background: $color-dark;
+  color: #ccc;
+  padding: $spacing-xxl 0 $spacing-lg;
+
+  &__brand-name {
+    font-size: $font-size-lg;
+    margin-bottom: $spacing-md !important;
+    color: $color-white !important;
+  }
+
+  &__brand-desc {
+    font-size: $font-size-sm;
+    line-height: 1.7;
+    color: #aaa !important;
+    margin-bottom: $spacing-md !important;
+  }
+
+  &__social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: $border-radius-full !important;
+    border: 1px solid #555 !important;
+    color: #ccc !important;
+    @include flex-center;
+    transition: all $transition-base;
+
+    &:hover {
+      background: $color-primary !important;
+      border-color: $color-primary !important;
+      color: $color-white !important;
+    }
+  }
+
+  &__col-title {
+    color: $color-white !important;
+    font-size: $font-size-base !important;
+    margin-bottom: $spacing-md !important;
+  }
+
+  &__link {
+    display: block;
+    font-size: $font-size-sm;
+    color: #aaa;
+    margin-bottom: $spacing-sm;
+    transition: color $transition-base;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__contact-item {
+    font-size: $font-size-sm;
+    color: #aaa;
+    margin-bottom: $spacing-sm;
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+  }
+
+  &__contact-icon {
+    color: $color-primary;
+  }
+
+  &__link--inline {
+    color: #aaa;
+    transition: color $transition-base;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid #444;
+    padding-top: $spacing-lg;
+    margin-top: $spacing-xl;
+    text-align: center;
+
+    p {
+      color: #888;
+      font-size: $font-size-xs;
+      margin: 0;
+    }
+  }
+}

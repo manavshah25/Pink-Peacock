@@ -1,0 +1,14 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin hover-lift {
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $shadow-lg;
+  }
+}

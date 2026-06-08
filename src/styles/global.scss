@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  color: $color-dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: $font-heading;
+}
+
+// Ant Design global overrides
+.ant-layout {
+  background: $color-white;
+}
+
+.ant-layout-header {
+  background: $color-white !important;
+  height: auto !important;
+  line-height: normal !important;
+  padding: 0 !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  box-shadow: $shadow-sm;
+}
+
+.ant-layout-content {
+  background: $color-white;
+}
+
+.ant-layout-footer {
+  background: $color-dark !important;
+  padding: 0 !important;
+}
+
+.ant-btn-primary {
+  background: $color-primary;
+  border-radius: $border-radius-pill;
+  font-weight: 500;
+
+  &:hover {
+    background: $color-primary-dark !important;
+  }
+}
+
+.ant-btn-default {
+  border-color: $color-secondary;
+  color: $color-secondary;
+  border-radius: $border-radius-pill;
+
+  &:hover {
+    border-color: $color-secondary-dark !important;
+    color: $color-secondary-dark !important;
+  }
+}
+
+.ant-card {
+  border-radius: $border-radius-md;
+}
+
+.ant-drawer-body {
+  padding: 0 !important;
+}

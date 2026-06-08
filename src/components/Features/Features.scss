@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.features {
+  padding: $spacing-xxl 0;
+  border-top: 1px solid $color-border;
+
+  &__item {
+    text-align: center;
+    padding: $spacing-lg $spacing-md;
+  }
+
+  &__icon {
+    font-size: 2.2rem;
+    color: $color-primary;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__title {
+    margin-bottom: $spacing-xs !important;
+  }
+
+  &__desc {
+    color: $color-gray;
+    font-size: $font-size-sm;
+    margin: 0;
+  }
+}

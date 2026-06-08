@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.wishlist {
+  &__items {
+    padding: $spacing-md $spacing-lg;
+  }
+
+  &__select-all {
+    padding-bottom: $spacing-md;
+    margin-bottom: $spacing-md;
+    border-bottom: 1px solid $color-border;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    padding: $spacing-md 0;
+    border-bottom: 1px solid $color-border;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__item-image {
+    width: 50px;
+    height: 50px;
+    border-radius: $border-radius-sm;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  &__item-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__item-name {
+    font-size: $font-size-sm;
+    font-weight: 500;
+    margin: 0 0 $spacing-xs !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__item-price {
+    color: $color-primary;
+    font-weight: 600;
+    font-size: $font-size-sm;
+  }
+
+  &__footer {
+    padding: $spacing-md 0;
+  }
+}
